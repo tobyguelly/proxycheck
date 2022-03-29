@@ -1,6 +1,6 @@
 FROM alpine
 WORKDIR /project
-COPY . .
+COPY proxycheck .
 EXPOSE 8080
-RUN chmod a+rwx proxycheck
+RUN chmod +x proxycheck
 CMD ./proxycheck
