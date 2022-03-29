@@ -1,5 +1,5 @@
 # ProxyCheck - Check your Reverse Proxy
-A simple Docker container containing an example API to test your reverse proxy server and check how it behaves.
+A simple Docker image containing a demo API to test your HTTP reverse proxy servers and check how they behave.
 
 ## Run Container
 ```
