@@ -1,8 +1,6 @@
-FROM alpine
-WORKDIR /project
-COPY proxycheck .
-EXPOSE 8080
-RUN chmod +x proxycheck
-CMD ls
-CMD pwd
-CMD ["/project/proxycheck"]
+FROM golang:1.14-alpine
+RUN mkdir /app
+COPY . /app
+WORKDIR /app
+RUN go build -o server .
+CMD [ "/app/server" ]
