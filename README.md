@@ -6,6 +6,11 @@ A simple Docker image containing a demo API to test your HTTP reverse proxy serv
 docker run --name=proxycheck -p 3001:8080 tobyguelly/proxycheck
 ```
 
+## Alternative Plattforms
+```
+docker run --name=proxycheck -p 3001:8080 tobyguelly/proxycheck-arm
+```
+
 ## Built-In Routes
 
 `/` Returns Hello World with HTTP status code 200
